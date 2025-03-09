@@ -1,0 +1,7 @@
+authors:
+  <author>:
+    name: isaccwebdev       # Author name
+    description: string # Author description
+    avatar: https://avatars.githubusercontent.com/u/83027826?v=4        # Author avatar
+    slug: url           # Author profile slug
+    url: https://github.com/isaccwebdev            # Author website URL

@@ -1,0 +1,80 @@
+site_name: LinuxFromScratch (Español)
+site_url: https://sitename.example
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  icon:
+    logo: simple/linux
+ 
+  features:
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - content.code.copy
+  
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: deep purple
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+plugins:
+    - search:
+        enable: true
+    - blog:
+        enabled: true
+        blog_toc: true
+        post_date_format: short
+        
+
+markdown_extensions:
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences: # Esto configura los flowcharts , revisar squidfunk documentacion 
+        custom_fences: 
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+    - pymdownx.tabbed:
+        alternate_style: true
+        combine_header_slug: true
+    - admonition #Esto construye notas visuales de avisos, info, tips ....
+    - pymdownx.details
+ 
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/isaccwebdev/repo-linux-from-scratch-spanish
+    - icon: simple/linux
+      link: https://www.linuxfromscratch.org
+  consent:
+    title: Cookie consent
+    description: We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    
+copyright: Copyright &copy; 2025 LinuxFromScratchEspañol - No oficial 
+       
